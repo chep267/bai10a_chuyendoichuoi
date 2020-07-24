@@ -11,14 +11,12 @@ public class Test {
 
         StringBuilder sb = new StringBuilder("");
 
-
         try {
             int k = 0;
-            while ((k = filter.read()) != -1) {
+            while ( (k = filter.read()) != -1 ) {
                 sb.append((char) k);
-
             }
-            System.out.print("\nChuoi chuyen doi: \n"+sb);
+            System.out.println("Chuoi chuyen doi:      \n" + sb);
 
         } catch (IOException ex) {
             ex.printStackTrace();
